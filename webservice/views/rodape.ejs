@@ -1,0 +1,45 @@
+<footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Projeto Final  <a href="https://getbootstrap.com/"></a>, feito por <a href="https://github.com/janainasanches" target="_blank">@janainasanches</a>.</p>
+    </div>
+  </footer>
+</div>
+
+<!-- Principal JavaScript do Bootstrap
+================================================== -->
+<!-- Foi colocado no final para a página carregar mais rápido -->
+<script src="/javascripts/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/javascripts/jquery-slim.min.js"><\/script>')</script>
+<script src="/javascripts/popper.min.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
+
+<script>
+
+
+
+  (function($) {
+   $(document).ready(function() {
+      // get current URL path and assign 'active' class
+      var pathname = window.location.pathname;
+      $('header > div > nav > a[href="'+pathname+'"]').parent().addClass('active');
+  });
+})(jQuery)
+</script>
+
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "c10c3a7a-5bcb-47dc-9cd0-fb71a4d8aef1", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "d15bd382-e120-4f07-9e83-1d1a45c57977", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+
+</body>
+</html>
