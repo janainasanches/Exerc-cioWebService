@@ -1,6 +1,6 @@
 {
   "name": "webservice",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,6 +13,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "node-libcurl": "^2.3.0",
+    "server": "^1.0.31",
     "yarn": "^1.22.10"
   }
 }
