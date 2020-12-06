@@ -1,10 +1,15 @@
 <%- include('topo'); -%>
 <main role="main" class="inner cover">
-    Estamos no meio de dezembro e é bem provável que, 
-    durante as próximas duas semanas que se aproximam, 
+    Estamos no meio de dezembro e é bem provável que,
+    durante as próximas duas semanas que se aproximam,
     você tenha algum amigo-secreto marcado na agenda da firma,
-     família, amigos.<br><br>
-    É possível fazer uma consulta nesta página para escolher o melhor 
-    presente para o seu amigo secreto.<br>
-    </main>
+    família, amigos.<br><br>
+
+    Utilize o recurso abaixo para enviar uma mensagem de áudio anônima<br><br>
+
+    <textarea id="text" name="text" rows="10" cols="70"></textarea>
+
+    <button id="bt-submit" onclick="textToAudio()" _msthash="133367" _msttexthash="161538">Sintetizar</button>
+
+</main>
 <%- include('rodape'); -%>
